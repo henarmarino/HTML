@@ -1,0 +1,85 @@
+  body {
+    background-color: lightblue;
+    text-align: center;
+    font-family: Georgia;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #myfirstform{
+    width:300px;
+    height: auto;
+    margin: 60px auto;
+    border-radius: 10px;
+    text-align: center;
+  }
+  h1 {
+    color: blue;
+    font-family:  Georgia;
+    font-size: 35px;
+    text-align: center;
+    border: 5px dotted blue;
+    margin-left: 450px;
+    margin-right: 450px;
+  }
+  .header {
+    background-color: lightskyblue;
+    padding: 5px;
+
+  }
+  p::first-letter {
+    color: blue;
+    font-size: x-large;
+  }
+  #choose {
+    background-color: lightseagreen;
+ 
+  }
+  #choose2{
+    background-color: lightseagreen;
+ 
+  }
+  #choose3 {
+    background-color: lightseagreen;
+ 
+  }
+  #choose4 {
+    background-color: lightslategray;
+ 
+  }
+  #choose5 {
+    background-color: lightslategray;
+ 
+  }
+  .personal {
+    background-color: lightcyan;
+  }
+  .others{
+    background-color: lightgray;
+  }
+  #hover:hover {
+    background-color: lightgreen;
+    opacity: 0.7;
+  }
+  #hover2:hover {
+    background-color: lightgreen;
+    opacity: 0.7;
+  }
+  .footer {
+    background-color: lightskyblue;
+    font-family: "Times New Roman", Times, serif;
+    color: blue;
+    text-align: center;
+    padding: 10px;
+  }
+  .javamessages{
+
+  font-family: "Times New Roman", Times, serif;
+  color: red;
+  text-align: center;
+  }
+  .javacorrect{
+
+  font-family: "Times New Roman", Times, serif;
+  color: green;
+  text-align: center;
+  }

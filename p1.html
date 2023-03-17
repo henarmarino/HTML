@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>p1.html</title>
+  <link rel="stylesheet" href="p1.css">
+  <script src="p1.js"> </script>
+</head>
+
+<body>
+  <div id="hover" class="header">
+    <h1>Practice 1</h1>
+  </div>
+
+  <form name="myfirstform" id="myfirstform" action="http://alberto.gil.webs.uvigo.es/SINT/22-23/p1.php" onsubmit="return send_form()">
+<p id="name" class="personal">First and last name:</p><input type="text" id="cname" name="cname" title="Two words, each
+composed of at least 3 characters (only ASCII letters, ’ñ/Ñ’ and accented vowels in Spanish and Galician)." pattern="^[A-Za-zñáéíóúÑÁÉÍÓÚ]{3,}[ ][A-Za-zñáéíóúÑÁÉÍÓÚ]{3,}" >
+<div class="javacorrect" id="formatnamecorrect"> </div>
+<br><br>
+<p id="login" class="personal">Login:</p><input type="text" id="clogin" name="clogin" > 
+ <div class="javamessages" id="formatlogin"> </div>
+ <div class="javacorrect" id="formatlogincorrect"> </div>
+<br><br>
+<p id="password" class="personal">Password:</p><input type="password" name="cpasswd" id="cpasswd"  > 
+<div class="javamessages" id="formatpasswd"> </div>
+<div class="javacorrect" id="formatpasswdcorrect"> </div>
+<br><br>
+<p id="DNI" class="personal">DNI:</p><input type="text" name="cdni" id="cdni" > 
+<div class="javamessages" id="formatdni"> </div>
+<div class="javacorrect" id="formatdnicorrect"> </div>
+<br><br>
+<p id="email" class="personal">Email address:</p><input type="email" name="cemail" id="cemail" > 
+<br><br>
+<p class="others">Attached File of a picture: </p><input type="file" name="cfile"> 
+<br><br>
+<p id="choose">Age range:</p>
+<br>
+<input type="radio" name="cage"  value="Less than25"> Less than25
+<br>
+<input type="radio" name="cage"  value ="Between 25 and 40"> Between 25 and 40
+<br>
+<input type="radio" name="cage"  value ="Between 40 and 60"> Between 40 and 60
+<br>
+<input type="radio" name="cage"  value ="Over 60"> Over 60
+<br><br>
+<div id="choosegenre">
+<p id="choose2">Choose an music genre:</p>
+<input type="checkbox" name="cgenre[]" value="Pop" onclick="checkOnlyOneGenre()"> Pop
+<br>
+<input type="checkbox"  name="cgenre[]" value="Rock" onclick="checkOnlyOneGenre()"> Rock
+<br>
+<input type="checkbox" name="cgenre[]" value="Country" onclick="checkOnlyOneGenre()"> Country
+<br>
+<input type="checkbox"  name="cgenre[]" value="Rap" onclick="checkOnlyOneGenre()"> Rap
+<br>
+<input type="checkbox" name="cgenre[]" value="Soul" onclick="checkOnlyOneGenre()"> Soul
+<br>
+<input type="checkbox" id="yesCheck" onclick="checkAll()" value="Check all of them"> Check all of them
+<br>
+<input type="checkbox" id="noCheck" onclick="uncheckAll()" value="Uncheck all of them"> Uncheck all of them
+</div>
+<br><br>
+<p class="others">Submit a comment</p>
+<textarea rows="4" cols="20" style="vertical-align: middle;" name="ccomment">  </textarea>
+<br><br>
+<p id="choose3">Select option field</p>
+<br>
+<select name="cInternet">      <option value="R">R</option>     <option value="Movistar">Movistar</option> <option value="Vodafone">Vodafone</option> <option value="Orange">Orange</option> </select> 
+<br><br>
+<input name="cbrowser" id="cbrowser" type="hidden" >
+<input name="cdate" id="cdate" type="hidden">
+<p id="choose4">Select the data submission method</p> 
+<br>
+<input type="radio" name="cmethod"  id="GET" value="GET" onclick="methodGET()" checked>GET
+<br>
+<input type="radio" name="cmethod"  id="POST" value ="POST" onclick="methodPOST()"> POST
+<br>
+<p id="choose5">Select the data submission encoding</p> 
+<br>
+<input type="radio" name="cencoding" id="urlencoded" onclick="enctypeURL()" value="application/x-www-form-urlencoded" checked>application/x-www-form-urlencoded
+<br>
+<input type="radio" name="cencoding"  id="multipartPost" onclick="enctypeMultipart()" value ="multipart/form-data">multipart/form-data
+  <br><br>
+  <button type="submit" onclick="DateHour(); Infobrowser();verifyName(); verifyLogin(); verifyPasswd(); verifyDNI()">Send</button>
+  <br><br>
+  <input type="reset" value="Reset" onclick="resetear()">
+  <br><br>
+
+<div id="hover2" class="footer">
+  <p>Henar Mari&ntilde;o Bodel&oacute;n</p>
+</div>
+</form>
+</body>
+</html>
